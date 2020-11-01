@@ -3,23 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A56702B254DA71A00634DDC /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A56702A254DA71A00634DDC /* MenuController.swift */; };
+		3A56702E254DA73A00634DDC /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A56702D254DA73A00634DDC /* GameController.swift */; };
+		3A567031254DAF7E00634DDC /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A567030254DAF7E00634DDC /* Questions.swift */; };
+		3A56703A254DBC9B00634DDC /* Base.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A567039254DBC9B00634DDC /* Base.json */; };
+		3A56703E254DBD9300634DDC /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 3A56703D254DBD9300634DDC /* SwiftyJSON */; };
+		3A567041254DD2B600634DDC /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A567040254DD2B600634DDC /* GameService.swift */; };
+		3A6370F7254DA6050079AB84 /* ResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6370F6254DA6050079AB84 /* ResultsController.swift */; };
 		3AEB642E254D980800604A63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEB642D254D980800604A63 /* AppDelegate.swift */; };
 		3AEB6430254D980800604A63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEB642F254D980800604A63 /* SceneDelegate.swift */; };
-		3AEB6432254D980800604A63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEB6431254D980800604A63 /* ViewController.swift */; };
 		3AEB6435254D980800604A63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AEB6433254D980800604A63 /* Main.storyboard */; };
 		3AEB6437254D980A00604A63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AEB6436254D980A00604A63 /* Assets.xcassets */; };
 		3AEB643A254D980A00604A63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AEB6438254D980A00604A63 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A56702A254DA71A00634DDC /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		3A56702D254DA73A00634DDC /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		3A567030254DAF7E00634DDC /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		3A567039254DBC9B00634DDC /* Base.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Base.json; sourceTree = "<group>"; };
+		3A567040254DD2B600634DDC /* GameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameService.swift; sourceTree = "<group>"; };
+		3A6370F6254DA6050079AB84 /* ResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsController.swift; sourceTree = "<group>"; };
 		3AEB642A254D980800604A63 /* GuessWhat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessWhat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AEB642D254D980800604A63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AEB642F254D980800604A63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3AEB6431254D980800604A63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3AEB6434254D980800604A63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3AEB6436254D980A00604A63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AEB6439254D980A00604A63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,12 +42,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A56703E254DBD9300634DDC /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AC024FC254D9DE400BB4795 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A567030254DAF7E00634DDC /* Questions.swift */,
+				3A567039254DBC9B00634DDC /* Base.json */,
+				3A567040254DD2B600634DDC /* GameService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3AC024FD254D9DEB00BB4795 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3A6370F6254DA6050079AB84 /* ResultsController.swift */,
+				3A56702A254DA71A00634DDC /* MenuController.swift */,
+				3A56702D254DA73A00634DDC /* GameController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3AC024FE254D9DFE00BB4795 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3AEB642D254D980800604A63 /* AppDelegate.swift */,
+				3AEB6436254D980A00604A63 /* Assets.xcassets */,
+				3AEB6438254D980A00604A63 /* LaunchScreen.storyboard */,
+				3AEB643B254D980A00604A63 /* Info.plist */,
+				3AEB642F254D980800604A63 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3AC02500254D9E1000BB4795 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3AEB6433254D980800604A63 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		3AEB6421254D980800604A63 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +108,10 @@
 		3AEB642C254D980800604A63 /* GuessWhat */ = {
 			isa = PBXGroup;
 			children = (
-				3AEB642D254D980800604A63 /* AppDelegate.swift */,
-				3AEB642F254D980800604A63 /* SceneDelegate.swift */,
-				3AEB6431254D980800604A63 /* ViewController.swift */,
-				3AEB6433254D980800604A63 /* Main.storyboard */,
-				3AEB6436254D980A00604A63 /* Assets.xcassets */,
-				3AEB6438254D980A00604A63 /* LaunchScreen.storyboard */,
-				3AEB643B254D980A00604A63 /* Info.plist */,
+				3AC02500254D9E1000BB4795 /* Storyboard */,
+				3AC024FE254D9DFE00BB4795 /* App */,
+				3AC024FD254D9DEB00BB4795 /* Controllers */,
+				3AC024FC254D9DE400BB4795 /* Model */,
 			);
 			path = GuessWhat;
 			sourceTree = "<group>";
@@ -83,6 +132,9 @@
 			dependencies = (
 			);
 			name = GuessWhat;
+			packageProductDependencies = (
+				3A56703D254DBD9300634DDC /* SwiftyJSON */,
+			);
 			productName = GuessWhat;
 			productReference = 3AEB642A254D980800604A63 /* GuessWhat.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +162,9 @@
 				Base,
 			);
 			mainGroup = 3AEB6421254D980800604A63;
+			packageReferences = (
+				3A56703C254DBD9300634DDC /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 3AEB642B254D980800604A63 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -124,6 +179,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A56703A254DBC9B00634DDC /* Base.json in Resources */,
 				3AEB643A254D980A00604A63 /* LaunchScreen.storyboard in Resources */,
 				3AEB6437254D980A00604A63 /* Assets.xcassets in Resources */,
 				3AEB6435254D980800604A63 /* Main.storyboard in Resources */,
@@ -137,9 +193,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AEB6432254D980800604A63 /* ViewController.swift in Sources */,
+				3A56702B254DA71A00634DDC /* MenuController.swift in Sources */,
+				3A567041254DD2B600634DDC /* GameService.swift in Sources */,
+				3A56702E254DA73A00634DDC /* GameController.swift in Sources */,
 				3AEB642E254D980800604A63 /* AppDelegate.swift in Sources */,
+				3A567031254DAF7E00634DDC /* Questions.swift in Sources */,
 				3AEB6430254D980800604A63 /* SceneDelegate.swift in Sources */,
+				3A6370F7254DA6050079AB84 /* ResultsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +348,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6L8Y48RX9J;
-				INFOPLIST_FILE = GuessWhat/Info.plist;
+				INFOPLIST_FILE = GuessWhat/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +367,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6L8Y48RX9J;
-				INFOPLIST_FILE = GuessWhat/Info.plist;
+				INFOPLIST_FILE = GuessWhat/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,6 +401,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3A56703C254DBD9300634DDC /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3A56703D254DBD9300634DDC /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A56703C254DBD9300634DDC /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3AEB6422254D980800604A63 /* Project object */;
 }

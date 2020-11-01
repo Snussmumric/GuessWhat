@@ -1,0 +1,39 @@
+{
+  "questions": [
+    {
+        "id": 0,
+      "text": "Question 1",
+      "answers": ["1",
+      "2",
+      "3",
+      "4"],
+      "correct": 0
+    },
+    {
+        "id": 1,
+      "text": "Question 2",
+      "answers": ["1",
+      "2",
+      "3",
+      "4"],
+      "correct": 1
+    },
+    {
+        "id": 2,
+      "text": "Question 3",
+      "answers": ["1",
+      "2",
+      "3",
+      "4"],
+      "correct": 2
+    },
+    {
+        "id": 3,
+      "text": "Question 4",
+      "answers": ["1",
+      "2",
+      "3",
+      "4"],
+      "correct": 3
+    } ]
+}
