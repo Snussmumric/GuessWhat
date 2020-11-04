@@ -13,6 +13,11 @@
 		3A56703A254DBC9B00634DDC /* Base.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A567039254DBC9B00634DDC /* Base.json */; };
 		3A56703E254DBD9300634DDC /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 3A56703D254DBD9300634DDC /* SwiftyJSON */; };
 		3A567041254DD2B600634DDC /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A567040254DD2B600634DDC /* GameService.swift */; };
+		3A56704A254EFB3900634DDC /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A567049254EFB3800634DDC /* Game.swift */; };
+		3A56704E254EFB7600634DDC /* RecordCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A56704D254EFB7600634DDC /* RecordCaretaker.swift */; };
+		3A567052254EFBC000634DDC /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A567051254EFBC000634DDC /* Record.swift */; };
+		3A567055254F008900634DDC /* GameSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A567054254F008900634DDC /* GameSession.swift */; };
+		3A5670592552C2E400634DDC /* ResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5670582552C2E400634DDC /* ResultsTableViewCell.swift */; };
 		3A6370F7254DA6050079AB84 /* ResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6370F6254DA6050079AB84 /* ResultsController.swift */; };
 		3AEB642E254D980800604A63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEB642D254D980800604A63 /* AppDelegate.swift */; };
 		3AEB6430254D980800604A63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEB642F254D980800604A63 /* SceneDelegate.swift */; };
@@ -27,6 +32,11 @@
 		3A567030254DAF7E00634DDC /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 		3A567039254DBC9B00634DDC /* Base.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Base.json; sourceTree = "<group>"; };
 		3A567040254DD2B600634DDC /* GameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameService.swift; sourceTree = "<group>"; };
+		3A567049254EFB3800634DDC /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		3A56704D254EFB7600634DDC /* RecordCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCaretaker.swift; sourceTree = "<group>"; };
+		3A567051254EFBC000634DDC /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		3A567054254F008900634DDC /* GameSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSession.swift; sourceTree = "<group>"; };
+		3A5670582552C2E400634DDC /* ResultsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableViewCell.swift; sourceTree = "<group>"; };
 		3A6370F6254DA6050079AB84 /* ResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsController.swift; sourceTree = "<group>"; };
 		3AEB642A254D980800604A63 /* GuessWhat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessWhat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AEB642D254D980800604A63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,12 +59,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A56704C254EFB6500634DDC /* Memento */ = {
+			isa = PBXGroup;
+			children = (
+				3A56704D254EFB7600634DDC /* RecordCaretaker.swift */,
+			);
+			path = Memento;
+			sourceTree = "<group>";
+		};
+		3A5670572552C2C000634DDC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3A5670582552C2E400634DDC /* ResultsTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		3AC024FC254D9DE400BB4795 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				3A567030254DAF7E00634DDC /* Questions.swift */,
 				3A567039254DBC9B00634DDC /* Base.json */,
 				3A567040254DD2B600634DDC /* GameService.swift */,
+				3A567049254EFB3800634DDC /* Game.swift */,
+				3A567051254EFBC000634DDC /* Record.swift */,
+				3A567054254F008900634DDC /* GameSession.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -62,6 +91,7 @@
 		3AC024FD254D9DEB00BB4795 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3A5670572552C2C000634DDC /* Cell */,
 				3A6370F6254DA6050079AB84 /* ResultsController.swift */,
 				3A56702A254DA71A00634DDC /* MenuController.swift */,
 				3A56702D254DA73A00634DDC /* GameController.swift */,
@@ -108,6 +138,7 @@
 		3AEB642C254D980800604A63 /* GuessWhat */ = {
 			isa = PBXGroup;
 			children = (
+				3A56704C254EFB6500634DDC /* Memento */,
 				3AC02500254D9E1000BB4795 /* Storyboard */,
 				3AC024FE254D9DFE00BB4795 /* App */,
 				3AC024FD254D9DEB00BB4795 /* Controllers */,
@@ -193,13 +224,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A567055254F008900634DDC /* GameSession.swift in Sources */,
 				3A56702B254DA71A00634DDC /* MenuController.swift in Sources */,
+				3A5670592552C2E400634DDC /* ResultsTableViewCell.swift in Sources */,
 				3A567041254DD2B600634DDC /* GameService.swift in Sources */,
+				3A567052254EFBC000634DDC /* Record.swift in Sources */,
 				3A56702E254DA73A00634DDC /* GameController.swift in Sources */,
 				3AEB642E254D980800604A63 /* AppDelegate.swift in Sources */,
 				3A567031254DAF7E00634DDC /* Questions.swift in Sources */,
 				3AEB6430254D980800604A63 /* SceneDelegate.swift in Sources */,
 				3A6370F7254DA6050079AB84 /* ResultsController.swift in Sources */,
+				3A56704E254EFB7600634DDC /* RecordCaretaker.swift in Sources */,
+				3A56704A254EFB3900634DDC /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

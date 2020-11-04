@@ -16,7 +16,7 @@ final class GameService {
             guard let path = Bundle.main.path(forResource: "Base", ofType: "json") else {return}
             let url = URL(fileURLWithPath: path)
     
-            URLSession.shared.dataTask(with: url) { [weak self] (data, response, error) in
+            URLSession.shared.dataTask(with: url) { (data, response, error) in
                 if let error = error {
                     print(error.localizedDescription)
                 }
@@ -24,9 +24,9 @@ final class GameService {
                 if let data = data, let json = try? JSON(data: data) {
                     items = json["questions"].arrayValue.map {Questions(json: $0)}
                 }
-    //            DispatchQueue.main.async {
+                DispatchQueue.main.async {
                     completion(items)
-    //            }
+                }
             }.resume()
         }
     

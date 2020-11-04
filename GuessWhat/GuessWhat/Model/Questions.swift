@@ -8,7 +8,7 @@
 import Foundation
 import SwiftyJSON
 
-final class Questions: Decodable{
+final class Questions: Codable{
     
     var id: Int
     var text: String
@@ -16,7 +16,7 @@ final class Questions: Decodable{
     var answer2: String
     var answer3: String
     var answer4: String
-    var correct: Int
+    var correct: String
     
     init(json: JSON) {
         
@@ -26,7 +26,7 @@ final class Questions: Decodable{
         self.answer2 = json["answers"][1].stringValue
         self.answer3 = json["answers"][2].stringValue
         self.answer4 = json["answers"][3].stringValue
-        self.correct = json["correct"].intValue
+        self.correct = json["correct"].stringValue
     }
     
 }
