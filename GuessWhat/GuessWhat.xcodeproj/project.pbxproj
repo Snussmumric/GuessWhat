@@ -19,6 +19,10 @@
 		3A567055254F008900634DDC /* GameSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A567054254F008900634DDC /* GameSession.swift */; };
 		3A5670592552C2E400634DDC /* ResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5670582552C2E400634DDC /* ResultsTableViewCell.swift */; };
 		3A6370F7254DA6050079AB84 /* ResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6370F6254DA6050079AB84 /* ResultsController.swift */; };
+		3ABD406D255332A700C9595F /* Shuffled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD406C255332A700C9595F /* Shuffled.swift */; };
+		3ABD40702553461400C9595F /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD406F2553461400C9595F /* Observable.swift */; };
+		3ABD4073255349AE00C9595F /* AddQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD4072255349AE00C9595F /* AddQuestionViewController.swift */; };
+		3ABD40762553DC8F00C9595F /* QuestionCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD40752553DC8F00C9595F /* QuestionCaretaker.swift */; };
 		3AEB642E254D980800604A63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEB642D254D980800604A63 /* AppDelegate.swift */; };
 		3AEB6430254D980800604A63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEB642F254D980800604A63 /* SceneDelegate.swift */; };
 		3AEB6435254D980800604A63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AEB6433254D980800604A63 /* Main.storyboard */; };
@@ -38,6 +42,10 @@
 		3A567054254F008900634DDC /* GameSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSession.swift; sourceTree = "<group>"; };
 		3A5670582552C2E400634DDC /* ResultsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableViewCell.swift; sourceTree = "<group>"; };
 		3A6370F6254DA6050079AB84 /* ResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsController.swift; sourceTree = "<group>"; };
+		3ABD406C255332A700C9595F /* Shuffled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shuffled.swift; sourceTree = "<group>"; };
+		3ABD406F2553461400C9595F /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		3ABD4072255349AE00C9595F /* AddQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestionViewController.swift; sourceTree = "<group>"; };
+		3ABD40752553DC8F00C9595F /* QuestionCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCaretaker.swift; sourceTree = "<group>"; };
 		3AEB642A254D980800604A63 /* GuessWhat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessWhat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AEB642D254D980800604A63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AEB642F254D980800604A63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				3A56704D254EFB7600634DDC /* RecordCaretaker.swift */,
+				3ABD40752553DC8F00C9595F /* QuestionCaretaker.swift */,
 			);
 			path = Memento;
 			sourceTree = "<group>";
@@ -73,6 +82,15 @@
 				3A5670582552C2E400634DDC /* ResultsTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		3ABD406B2553329800C9595F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3ABD406C255332A700C9595F /* Shuffled.swift */,
+				3ABD406F2553461400C9595F /* Observable.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		3AC024FC254D9DE400BB4795 /* Model */ = {
@@ -95,6 +113,7 @@
 				3A6370F6254DA6050079AB84 /* ResultsController.swift */,
 				3A56702A254DA71A00634DDC /* MenuController.swift */,
 				3A56702D254DA73A00634DDC /* GameController.swift */,
+				3ABD4072255349AE00C9595F /* AddQuestionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -138,6 +157,7 @@
 		3AEB642C254D980800604A63 /* GuessWhat */ = {
 			isa = PBXGroup;
 			children = (
+				3ABD406B2553329800C9595F /* Helpers */,
 				3A56704C254EFB6500634DDC /* Memento */,
 				3AC02500254D9E1000BB4795 /* Storyboard */,
 				3AC024FE254D9DFE00BB4795 /* App */,
@@ -226,6 +246,7 @@
 			files = (
 				3A567055254F008900634DDC /* GameSession.swift in Sources */,
 				3A56702B254DA71A00634DDC /* MenuController.swift in Sources */,
+				3ABD4073255349AE00C9595F /* AddQuestionViewController.swift in Sources */,
 				3A5670592552C2E400634DDC /* ResultsTableViewCell.swift in Sources */,
 				3A567041254DD2B600634DDC /* GameService.swift in Sources */,
 				3A567052254EFBC000634DDC /* Record.swift in Sources */,
@@ -234,7 +255,10 @@
 				3A567031254DAF7E00634DDC /* Questions.swift in Sources */,
 				3AEB6430254D980800604A63 /* SceneDelegate.swift in Sources */,
 				3A6370F7254DA6050079AB84 /* ResultsController.swift in Sources */,
+				3ABD40702553461400C9595F /* Observable.swift in Sources */,
+				3ABD40762553DC8F00C9595F /* QuestionCaretaker.swift in Sources */,
 				3A56704E254EFB7600634DDC /* RecordCaretaker.swift in Sources */,
+				3ABD406D255332A700C9595F /* Shuffled.swift in Sources */,
 				3A56704A254EFB3900634DDC /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
